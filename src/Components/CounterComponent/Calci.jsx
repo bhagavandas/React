@@ -1,8 +1,11 @@
 import React,{Component}from "react";
+import Parent from "../ParentChild/Parent";
+import "./Calculator.css"
+import CalParent from "./CalParent";
     class Calculator extends Component{
         constructor(){
             super();
-            this.state = {inputValue:null, newValue:null, isAction:null}
+            this.state = {inputValue:null, newValue:null, isAction:null,result:[]}
         }
         setFirstInputValue = (e) => {
             let value = e.target.value;
@@ -18,6 +21,7 @@ import React,{Component}from "react";
           let result;
           let inputValue = Number(this.state.inputValue);
           let newValue = Number(this.state.newValue);
+          
          
           switch(type){
             case 'sum':
@@ -32,26 +36,39 @@ import React,{Component}from "react";
             case 'div':
               result= inputValue / newValue
               break;
+            
 
           }
-          this.setState({result: result});
+          let resultArray = this.state.result;
+          resultArray.push(result);
+          this.setState({result: resultArray});
 
+        }
+
+        reset = () => {
+          this.setState({inputValue:"", newValue:"", result:[]})
         }
        
         render(){
           return(
             <div>
-              <h1>Calculator</h1>
-              <input style={{margin:'10px'}} value={this.state.inputValue} placeholder="enter value" onChange={this.setFirstInputValue} />
-              <input style={{margin:'10px'}} value={this.state.newValue} placeholder="enter value" onChange={this.setSecondInputValue} />
-             
-              <button style= {{margin:'10px'}} onClick={() => this.calculate('sum')}>Addition</button>
-              <button style= {{margin:'10px'}} onClick={() => this.calculate('sub')}>Subtraction</button>
-              <button style= {{margin:'10px'}} onClick={() => this.calculate('mult')}>Multiplication</button>
-              <button style= {{margin:'10px'}} onClick={() => this.calculate('div')}>Division</button>
               
-            <div style= {{margin:'10px', color:'blue', fontSize:'30px', justifyContent:'center'}} >Result: {this.state.result}
-            </div>
+              <h1>Calculator</h1>
+              <input  value={this.state.inputValue} placeholder="enter value" onChange={this.setFirstInputValue} />
+              <input  value={this.state.newValue} placeholder="enter value" onChange={this.setSecondInputValue} />
+             
+              <button  onClick={() => this.calculate('sum')}>Addition</button>
+              <button  onClick={() => this.calculate('sub')}>Subtraction</button>
+              <button  onClick={() => this.calculate('mult')}>Multiplication</button>
+              <button  onClick={() => this.calculate('div')}>Division</button>
+              <button  onClick={this.reset}>Clear</button>
+              
+            {/* <div className="Result" >Result: {this.state.result.map(res => '' +res+'')}
+            </div> */}
+            
+        
+            <CalParent result = {this.state.result}/>
+
           </div>
           )
         }
