@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
+import PayrollAppBar, { MuiAppBar } from './Components/AppBar/PayrollAppBar';
+import EmpCard from './Components/EmpDetailsCard/EmpCard';
+import EmployeeCard from './Components/EmpDetailsCard/EmployeeCard';
+import EmpDetails from './Components/EmpDetailsCard/EmpDetails';
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <PayrollAppBar/>
+     {/* <EmpCard/> */}
+    <EmployeeCard/>
+{/* <EmpDetails/> */}
+
     </div>
   );
 }

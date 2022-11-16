@@ -1,0 +1,44 @@
+.logo{
+  width: 4%;
+  height: 40px;
+  flex-direction: center;
+  margin: 1%;
+ 
+  text-align: left;
+  
+}
+.bar{
+  
+    width: 100%;
+    text-align: left;
+    text-justify: auto;
+    max-height: 90px;
+    background-color: #fafafa;
+    color: #fafafa;
+}
+
+
+  .Apptitle {
+    height: 90px;
+    font-size: 30px;
+    font: roboto;
+    text-align: left;
+    text-justify: center;
+    width: 100%;
+    color: green;
+    
+    
+    
+  }
+  .title{
+   
+    font-size: 30px;
+    text-align: left;
+    
+    width: 100%;
+    color: grey;
+    margin-left: 95px;
+    
+   
+  }
+  

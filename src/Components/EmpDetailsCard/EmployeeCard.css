@@ -1,0 +1,38 @@
+.form_details{
+    
+    display: flex;
+    margin: 20px 0px;
+}
+
+.form_card{
+    display: flex;
+    padding: 90px 100px;
+    background-color: rgb(252, 252, 252);
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    width: 650px;
+    height: 550px;
+   
+}
+.title{
+    color: #434343;
+    font-weight: 600;
+    marker-mid: auto;
+}
+.profile_img{
+    height: 35px !important;
+    width: 35px !important;
+    margin-left: 90px;
+}
+.form_label{
+    margin-right: 90px;
+    color: #616161;
+    font-size: 16px;
+}
+.button{
+    margin-right: 250px;
+}
+.submit{
+    margin-right: 50px;
+}
