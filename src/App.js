@@ -1,19 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
-import PayrollAppBar, { MuiAppBar } from './Components/AppBar/PayrollAppBar';
-import EmpCard from './Components/EmpDetailsCard/EmpCard';
-import EmployeeCard from './Components/EmpDetailsCard/EmployeeCard';
-import EmpDetails from './Components/EmpDetailsCard/EmpDetails';
+// import { Route, Router, Routes } from 'react-router-dom';
+import './App.css';
+import Homepage from './Pages/Homepage';
+import Hometable from './Pages/Hometable';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+
+
 
 
 function App() {
   return (
-    <div className="App">
-       <PayrollAppBar/>
-     {/* <EmpCard/> */}
-    <EmployeeCard/>
-{/* <EmpDetails/> */}
+    <div>
+    <Router>
+      <Routes>
+        <Route exact path="/Homepage" element={<Homepage/>}>
+        </Route>
+        <Route exact path="/Hometable" element={<Hometable/>}>
+
+        </Route>
+      </Routes>
+    </Router>
+      
+
 
     </div>
   );

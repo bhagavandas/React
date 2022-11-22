@@ -1,35 +1,28 @@
+import React, { Component } from 'react';
+import AppBar from '@mui/material/AppBar';
+import './PayrollAppBar.css';
+import img1 from './logo.png';
 
-import { AppBar } from '@material-ui/core';
-import "./PayrollAppBar.css";
-import icon from './icon.png';
+class PayrollAppBar extends Component {
+    render() {
+        return (
+                <div>
+                  
+              <AppBar className='muibar' sx={{ background:'white'}} position="static" >
+              <img className='logo'src={img1} alt="Logo" />
+              <span  className='Apptitle'>EMPLOYEE</span>
+              <br/>
+              <span className='title'>PAYROLL</span>
+              </AppBar>        
+              
 
-import React, { Component } from 'react'
-import Card from '@material-ui/core/Card';
-
-export default class PayrollAppBar extends Component {
-  render() {
-    return (
-      <div>
-        
-      <AppBar className='bar'>
-        {/* <div className='logo'>
-        <img src={icon} alt="Logo" />
-        </div> */}
-        <div>
-        <img className='logo' src={icon} alt="Logo"></img>
-          <span className='Apptitle'> EMPLOYEE </span><br></br>
-          <span className='title' color='green'> PAYROLL</span>
-          
-       
-        </div>
-       
-         
-      </AppBar>
-      
-      </div>
-    )
-  }
+             
+                </div>
+            
+        );
+    }
 }
 
+export default PayrollAppBar;
 
 

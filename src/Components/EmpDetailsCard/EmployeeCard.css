@@ -1,38 +1,87 @@
-.form_details{
-    
+.field_container{
     display: flex;
-    margin: 20px 0px;
+    margin: 20px 250px;
+    
 }
 
-.form_card{
+.form{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.form_card {
+
     display: flex;
-    padding: 90px 100px;
+    padding: 20px 100px;
     background-color: rgb(252, 252, 252);
     align-items: center;
-    margin: auto;
     flex-direction: column;
-    width: 650px;
-    height: 550px;
-   
+    width: 800px;
+    height: 650px;
+    margin-top: 190px;
+    border: 1px solid #F5F5F5;
+    margin: auto;
 }
-.title{
-    color: #434343;
-    font-weight: 600;
-    marker-mid: auto;
-}
-.profile_img{
-    height: 35px !important;
-    width: 35px !important;
-    margin-left: 90px;
-}
-.form_label{
-    margin-right: 90px;
+
+ .form_label {
+    width: 200px;
     color: #616161;
     font-size: 16px;
 }
-.button{
-    margin-right: 250px;
+
+.title{
+    color: #434343;
+    font-weight: 600 !important;
 }
-.submit{
-    margin-right: 50px;
+
+.profile_img{
+    height: 35px !important;
+    width: 35px !important;
 }
+
+.action_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.action_button {
+    margin: 0px 10px !important;
+    color: #616161 !important;
+    background-color: #E2E2E2 !important;
+    border-color: #969696 !important;
+} 
+.TableTitle{
+   flex-direction: row;
+   flex: 50%;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.emp-name-field { 
+    
+    margin-left: 6px;
+    width: 48px;
+    height: 24px;    
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+}
+.name-box {
+    top: -40px;
+    left: 200px;
+    width: 400px;
+    height: 30px;
+    
+    
+}
+
+
+
+
+
+
+
+
+      

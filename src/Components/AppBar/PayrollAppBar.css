@@ -1,44 +1,42 @@
 .logo{
-  width: 4%;
-  height: 40px;
-  flex-direction: center;
-  margin: 1%;
- 
+  width:2%;
+  height:50%;
+  flex-direction: left;
+  margin-top: 20px;
+  margin-left: 25px;
   text-align: left;
   
 }
-.bar{
-  
-    width: 100%;
-    text-align: left;
-    text-justify: auto;
-    max-height: 90px;
-    background-color: #fafafa;
-    color: #fafafa;
+
+.muibar{
+  color: black;
+  background: white;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 1920px;
+  height: 75px;
+  opacity: 1;
+  background-color: #FFFFFF;
+  text-align: left;
 }
-
-
-  .Apptitle {
-    height: 90px;
-    font-size: 30px;
-    font: roboto;
-    text-align: left;
-    text-justify: center;
-    width: 100%;
-    color: green;
-    
-    
-    
-  }
-  .title{
-   
-    font-size: 30px;
-    text-align: left;
-    
-    width: 100%;
-    color: grey;
-    margin-left: 95px;
-    
-   
-  }
+.Apptitle{
+  height:auto;
+  width:75%;
+  font-size: 20px;
+  text-align: left;
+  margin-top: -40px;
+  /* margin-left: 50px; */
+  background-color:rgb(252, 252, 252);
+  color: green;
+  text-align: left;
+  margin-left: 70px;
+}
+  
+.title{
+  
+  margin-top: -20px;
+  margin-left: 70px; 
+  text-align: left;
+  
+}
   
