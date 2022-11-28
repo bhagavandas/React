@@ -9,8 +9,11 @@
     margin-left: 20px;
 }
 
-.form_card {
+@media only screen and (max-width:480px){
+    
 
+.form_card {
+    
     display: flex;
     padding: 20px 100px;
     background-color: rgb(252, 252, 252);
@@ -22,7 +25,7 @@
     border: 1px solid #F5F5F5;
     margin: auto;
 }
-
+}
  .form_label {
     width: 200px;
     color: #616161;
